@@ -50,7 +50,7 @@ nav ul {
   color:white
 }
 nav ul li {
-  float:left;
+  float:center;
   flex:1;
   color:white
 }
@@ -68,7 +68,7 @@ li {
 
 li::before {
   content: "";
-  position: absolute;
+  position:absolute;
   left: -2rem; 
   width: 1.5rem;
   height: 1.5rem;
@@ -90,7 +90,7 @@ footer{
 }
 
 .image {
-  max-width: 100%; 
+  max-width:fit-content; 
   height: auto; 
   border: 1rem;
   border-color:black;
@@ -98,6 +98,7 @@ footer{
 
 .image-container {
   display: flex;
+  flex-wrap:wrap;
   justify-content: center; 
   align-items: center; 
   gap: 20px; /* Optional: add space between the images */
