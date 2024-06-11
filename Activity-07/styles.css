@@ -29,15 +29,16 @@ section {
         justify-content: center;
         padding:2rem
     }
-
+/*format images to fit screen*/
 img {
         width: 100%;
         height: auto;
     }
+/*add a top margin*/
 .topmarg{
         top-margin:1rem
 }
-
+/*format the footer to stand out from document*/
 footer{
         background-color: rgb(244, 190, 89);
         padding:1rem;
