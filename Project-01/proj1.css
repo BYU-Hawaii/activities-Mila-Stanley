@@ -11,7 +11,6 @@ header {
     color:white;
     font-family:serif ;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('images/lacorner.jpg');
-    
     background-position: center;
     padding: 40px;
     text-align: center;
@@ -22,7 +21,7 @@ section{
   border-color:black;
   margin-top:1rem;
   color:white;
-  padding:1rem
+  padding:2rem
 }
 nav{
   grid-area:nav;
@@ -52,7 +51,7 @@ nav ul {
 nav ul li {
   float:center;
   flex:1;
-  color:white
+  color:white;
 }
 
 nav a:hover {
@@ -88,12 +87,28 @@ footer{
   padding: 40px;
   text-align: center;
 }
+.image{
+  max-width:90%;
+  height:auto;
+  border: 1rem;
+  border-color:rgb(210, 145, 60);
+  border-style:solid;
+}
 
-.image {
-  max-width:fit-content; 
+.image2 {
+  max-width:46%; 
   height: auto; 
   border: 1rem;
-  border-color:black;
+  border-color:rgb(210, 145, 60);
+  border-style:solid;
+}
+
+.image3 {
+  max-width:30%; 
+  height: auto; 
+  border: 1rem;
+  border-color:rgb(210, 145, 60);
+  border-style:solid;
 }
 
 .image-container {
@@ -101,7 +116,10 @@ footer{
   flex-wrap:wrap;
   justify-content: center; 
   align-items: center; 
-  gap: 20px; /* Optional: add space between the images */
+  gap: 1rem;
+}
+.i{
+  font-style: italic;
 }
 
 @media (min-width: 768px){
