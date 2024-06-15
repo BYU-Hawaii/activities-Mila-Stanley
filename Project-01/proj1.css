@@ -76,6 +76,10 @@ li::before {
   color:white
 }
 
+figcaption {
+  font-size: small;
+}
+
 footer{
   border-color:black;
   border-style:solid;
@@ -95,32 +99,12 @@ footer{
   border-style:solid;
 }
 
-.image2 {
-  max-width:46%; 
-  height: auto; 
-  border: 1rem;
-  border-color:rgb(210, 145, 60);
-  border-style:solid;
-}
+fig
 
-.image3 {
-  max-width:30%; 
-  height: auto; 
-  border: 1rem;
-  border-color:rgb(210, 145, 60);
-  border-style:solid;
-}
-
-.image-container {
-  display: flex;
-  flex-wrap:wrap;
-  justify-content: center; 
-  align-items: center; 
-  gap: 1rem;
-}
 .i{
   font-style: italic;
 }
+
 
 @media (min-width: 768px){
   body{
