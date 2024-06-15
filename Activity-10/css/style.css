@@ -1,30 +1,36 @@
+/*fixed background-color and font*/
 body {
-  background color: forestgreen;
+  background-color: forestgreen;
   margin: 0;
-  font-family: Gil Sans;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/*fixed "gold" typo and "padding" typo*/
 header {
-  background-color: G0ld;
+  background-color: Gold;
   color: #004d00;
   text-align: center;
   font-size: 2em;
-  paddding: 20px;
+  padding: 20px;
   margin: 0;
 }
 
+/*added px to 0 in padding*/
 .nav {
-  background-color: #2e1a1a;
+  background-color: black;
   width: 100%;
-  margin: 0;
-  padding: 0 5px;
+  margin: 0px;
+  padding: 0px 5px;
   position: sticky;
-  top: 0;
+  top: 0px;
 }
 
+/*fixed border color*/
 nav li {
   display: inline;
-  border-right: 1px solid grey;
+  border-right: 1px;
+  border-style: solid;
+  border-color: grey;
 }
 
 nav li:last-child {
@@ -44,27 +50,33 @@ nav a {
   padding: 14px 16px;
 }
 
-nav a::hover {
+/*got rid of ::*/
+nav a:hover {
   background-color: gold;
   color: #2e1a1a;
 }
 
+/*fixed px on margin*/
 main {
   background-color: lightgreen;
-  margin: 50px 100;
+  margin: 50px 100px;
   padding: 50px;
 }
 
-garden {
-  border: 5px solid brown;
+/*fixed border elements and fixed height to auto*/
+.garden {
+  border: 5px ;
+  border-style: solid;
+  border-color:brown;
   border-radius: 30px;
   box-shadow: 5px 5px 15px grey;
-  height: 30;
+  height: auto;
   width: 30%;
 }
 
+/*fixed margin-top*/
 section {
-  margintop: 30px;
+  margin-top: 30px;
 }
 
 h2 {
