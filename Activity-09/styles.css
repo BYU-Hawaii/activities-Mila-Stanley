@@ -1,0 +1,36 @@
+header {
+    background-color:bisque;
+    color: chocolate;
+    text-align:center;
+    padding:2rem;
+}
+
+nav {
+    list-style:none;
+    background-color: chocolate;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: bisque;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content:space-evenly
+}
+
+li {
+    display:inline;
+    padding:0.5rem;
+}
+
+li a {
+    text-decoration:none;
+    font-family:'Courier New', Courier, monospace;
+    display:block;
+    color: bisque;
+}
+
+li:hover{
+    background-color:brown;
+}
