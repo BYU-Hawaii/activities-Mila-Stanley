@@ -1,0 +1,37 @@
+.grid-container {
+    display:grid;
+    gap:1rem;
+    grid-template-columns: 2fr 2fr;
+}
+
+.grid-item1 {
+    background-color:plum;
+    border-style:solid;
+    border-color:black;
+    padding:2rem;
+    color:white;
+}
+
+.grid-item2 {
+    background-color:blueviolet;
+    border-style:solid;
+    border-color:black;
+    padding:2rem;
+    color:white;
+}
+
+.grid-item3 {
+    background-color:magenta;
+    border-style:solid;
+    border-color:black;
+    padding:2rem;
+    color:white;
+}
+
+.grid-item4 {
+    background-color:violet;
+    border-style:solid;
+    border-color:black;
+    padding:2rem;
+    color:white;
+}
