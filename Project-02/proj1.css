@@ -1,6 +1,11 @@
 .grid-container{
-    display:grid;
-    grid-template-columns: 1fr ;
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "nav"
+    "section"
+    "footer";
 }
 
 body {
@@ -19,6 +24,7 @@ header {
     background-position: center;
     padding: 40px;
     text-align: center;
+    grid-area:header;
 }
 section{
   background-color: rgb(223, 195, 159);
@@ -26,7 +32,8 @@ section{
   border-color:black;
   margin-top:1rem;
   color:white;
-  padding:1rem
+  padding:1rem;
+  grid-area:section;
 }
 nav {
   list-style:none;
@@ -89,6 +96,7 @@ footer{
   background-position: center;
   padding: 40px;
   text-align: center;
+  grid-area: footer;
 }
 .image{
   max-width:90%;
@@ -135,6 +143,11 @@ nav li{
   .grid-container{
     display:grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header header"
+      "nav nav"
+      "section section"
+      "footer footer";
   }
 }
 
@@ -155,5 +168,10 @@ nav ul{
   .grid-container{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+      "header header header"
+      "nav nav nav"
+      "section section section"
+      "footer footer footer";
   }
 }
