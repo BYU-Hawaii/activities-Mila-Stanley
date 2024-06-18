@@ -1,77 +1,117 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "header"
+        "nav"
+        "body"
+        "footer";
+}
 header {
-    background-color:brown;
-    color: white;
-    text-align:center;
-    padding:2rem;
-    border-color: black;
+    grid-area: header;
+    background-color: bisque;
+    border-color:black;
     border-style:solid;
-
-}
-
-body {
-    background-color:bisque;
-    padding:2rem
-}
-
-h2 {
-    color:brown;
+    text-align: center;
 }
 
 nav {
     list-style:none;
-    background-color: chocolate;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    color: bisque;
+    grid-area:nav;
 }
-
-ul{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content:space-evenly
+nav ul{
+    margin:0;
+    padding:0
 }
-
-li {
-    display:inline;
-    padding:0.5rem;
-}
-
-li a {
-    text-decoration:none;
-    font-family:'Courier New', Courier, monospace;
+nav li {
     display:block;
-    color: bisque;
+    padding:0.5rem;
+    background-color: tan;
+    color:white;
+    border-color: white;
+    border-style: solid;
 }
 
-li:hover{
+nav li a {
+    text-decoration:none;
+    display:block;
+    color:white;
+}
+
+nav li:hover{
     background-color:brown;
 }
 
+body{
+    grid-area: body ;
+}
+
+section{
+
+    padding:1rem
+}
 img {
-    width:90%;
+    width:100%;
     height:auto;
-    padding: 1rem;
+}
+
+.gallery-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:0.5rem;
+
+}
+
+footer{
+    grid-area:footer;
 }
 
 @media (min-width:768px) {
+    nav ul{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        background-color: black;
+        padding:0.5rem;
+        
+
+    }
+    nav li{
+        display:block;
+        padding-left: 2rem;
+        padding-right:2rem
+    }
+    
     body {
         font-size:18px;
         margin:1rem;
     }
     img {
-        width:80%;
+        width:45%;
         height:auto;
     }
+    
 }
 
 @media (min-width:1024px) {
+    nav{
+        background-color: tan;
+    }
+    nav ul{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        margin:auto;
+    }
     body {
         font-size:20px;
         margin:2rem;
     }
     
     img{
-        width:70%;
+        width:30%;
         height:auto;
     }
 }
