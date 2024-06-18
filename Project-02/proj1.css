@@ -1,5 +1,10 @@
+.grid-container{
+    display:grid;
+    grid-template-columns: 1fr ;
+}
+
 body {
-    background-color:rgb(210, 145, 60);
+    background-color:black;
     color: white;
     font-size: 18px;
     line-height: 1.6;
@@ -16,48 +21,42 @@ header {
     text-align: center;
 }
 section{
-  background-color: tan;
+  background-color: rgb(223, 195, 159);
   border-style:solid;
   border-color:black;
   margin-top:1rem;
   color:white;
-  padding:2rem
+  padding:1rem
 }
-nav{
+nav {
+  list-style:none;
   grid-area:nav;
-  background-color: tan;
-  border-color:black;
-  border-style: solid;
-  justify-content:space-evenly;
-  background-image:none;
-  margin-bottom: 1rem;
-  margin-top:1rem;
-  color:white
 }
-nav ul li a{
+nav ul{
+  margin:0;
+  padding:0
+}
+nav li {
+  display:block;
+  padding:0.5rem;
+  background-color: rgb(210, 145, 60);
   color:white;
-  text-decoration: none;
+  border-color: black;
+  border-style: solid;
 }
-nav li::before{
-  background-image:none;
-}
-nav ul {
-  display:flex;
-  flex-direction: row;
-  list-style-type: none;
-  width:100%;
-  color:white
-}
-nav ul li {
-  float:center;
-  flex:1;
+
+nav li a {
+  text-decoration:none;
+  display:block;
   color:white;
 }
 
-nav a:hover {
+nav li:hover{
   background-color:brown;
-  color:white;
-  padding:2rem;
+}
+
+nav li::before{
+  background-image:none;
 }
 
 li {
@@ -107,6 +106,24 @@ fig
 
 
 @media (min-width: 768px){
+  nav ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    background-color: rgb(210, 145, 60);
+    padding:0.5rem;
+    border-color:black;
+    border-style:solid;
+    
+
+}
+nav li{
+    display:block;
+    padding-left: 2rem;
+    padding-right:2rem;
+    border:none;
+}
   body{
     font-size: 20px;
     padding: 10px 20px;
@@ -115,11 +132,28 @@ fig
     padding 15px 30px;
     font-size: 20px;
   }
-  header{}
+  .grid-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (min-width:1024px){
+  nav{
+    background-color: rgb(210, 145, 60);
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    margin:auto;
+}
   body{
     font-size: 22px;
+  }
+  .grid-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
