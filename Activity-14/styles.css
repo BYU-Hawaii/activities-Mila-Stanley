@@ -64,6 +64,9 @@ img {
 
 footer{
     grid-area:footer;
+    background-color: bisque;
+    border-color:black;
+    border-style:solid;
 }
 
 @media (min-width:768px) {
