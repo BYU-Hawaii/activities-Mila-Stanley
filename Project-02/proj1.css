@@ -1,0 +1,125 @@
+body {
+    background-color:rgb(210, 145, 60);
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+header {
+    border-color:black;
+    border-style:solid;
+    color:white;
+    font-family:serif ;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('images/lacorner.jpg');
+    background-position: center;
+    padding: 40px;
+    text-align: center;
+}
+section{
+  background-color: tan;
+  border-style:solid;
+  border-color:black;
+  margin-top:1rem;
+  color:white;
+  padding:2rem
+}
+nav{
+  grid-area:nav;
+  background-color: tan;
+  border-color:black;
+  border-style: solid;
+  justify-content:space-evenly;
+  background-image:none;
+  margin-bottom: 1rem;
+  margin-top:1rem;
+  color:white
+}
+nav ul li a{
+  color:white;
+  text-decoration: none;
+}
+nav li::before{
+  background-image:none;
+}
+nav ul {
+  display:flex;
+  flex-direction: row;
+  list-style-type: none;
+  width:100%;
+  color:white
+}
+nav ul li {
+  float:center;
+  flex:1;
+  color:white;
+}
+
+nav a:hover {
+  background-color:brown;
+  color:white;
+  padding:2rem;
+}
+
+li {
+  position: relative;
+  color:white
+}
+
+li::before {
+  content: "";
+  position:absolute;
+  left: -2rem; 
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url('images/labullet.jpg');
+  background-size: contain;
+  color:white
+}
+
+figcaption {
+  font-size: small;
+}
+
+footer{
+  border-color:black;
+  border-style:solid;
+  color:white;
+  font-family:serif ;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('images/lacorner.jpg');
+  margin-top:1rem;
+  background-position: center;
+  padding: 40px;
+  text-align: center;
+}
+.image{
+  max-width:90%;
+  height:auto;
+  border: 1rem;
+  border-color:rgb(210, 145, 60);
+  border-style:solid;
+}
+
+fig
+
+.i{
+  font-style: italic;
+}
+
+
+@media (min-width: 768px){
+  body{
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+  button {
+    padding 15px 30px;
+    font-size: 20px;
+  }
+  header{}
+}
+
+@media (min-width:1024px){
+  body{
+    font-size: 22px;
+  }
+}
