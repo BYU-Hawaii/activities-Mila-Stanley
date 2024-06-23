@@ -1,7 +1,6 @@
 .feedback {
   color: red;
   display: none;
-  grid-area: feedback;
 }
 
 .valid-feedback {
