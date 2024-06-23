@@ -1,6 +1,7 @@
 .feedback {
   color: red;
   display: none;
+  grid-area: feedback;
 }
 
 .valid-feedback {
@@ -8,3 +9,25 @@
   display: none; 
 }
 
+#registrationForm {
+  display:flex;
+  flex-direction: column;
+  padding:1rem;
+}
+
+@media (min-width:1024px) {
+  
+  #registrationForm {
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    
+  }
+  input {
+    width:85%;
+  }
+  label {
+    width:10%
+  }
+ 
+}
