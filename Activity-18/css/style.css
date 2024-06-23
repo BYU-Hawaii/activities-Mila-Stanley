@@ -1,0 +1,10 @@
+.feedback {
+  color: red;
+  display: none;
+}
+
+.valid-feedback {
+  color: green;
+  display: none; 
+}
+
