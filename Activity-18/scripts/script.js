@@ -19,7 +19,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     document.getElementById('usernameFeedback').textContent = usernameValid ? '' : 'Username should be at least 5 characters long and contain only letters and numbers.';
     document.getElementById('emailFeedback').textContent = emailValid ? '' : 'Please enter a valid email address.';
     document.getElementById('passwordFeedback').textContent = passwordValid ? '' : 'Password should be at least 8 characters long, contain numbers and both lowercase and uppercase letters.';
-    document.getElementById('phoneFeedback').textContent = phoneValid ? '' :
+    document.getElementById('phoneFeedback').textContent = phoneValid ? '' : 'Please enter a valid phone number.';
 
     var formValid = usernameValid && emailValid && passwordValid && phoneValid;
 
