@@ -1,11 +1,11 @@
 .feedback {
   color: red;
-  display: none;
+  display:contents;
 }
 
 .valid-feedback {
   color: green;
-  display: none; 
+  display: contents; 
 }
 
 #registrationForm {
