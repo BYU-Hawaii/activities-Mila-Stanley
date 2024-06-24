@@ -3,7 +3,6 @@ import Cactus from '../actors/Cactus.js'
 import Cloud from '../actors/Cloud.js'
 import Dino from '../actors/Dino.js'
 import sprites from '../sprites.js'
-import { playSound } from '../sounds.js'
 import {
   loadFont,
   loadImage,
@@ -31,7 +30,7 @@ export default class DinoGame extends GameRunner {
      * px: pixels
      */
     this.defaultSettings = {
-      bgSpeed: 8, // ppf
+      bgSpeed: 5, // ppf
       birdSpeed: 7.2, // ppf
       birdSpawnRate: 240, // fpa
       birdWingsRate: 15, // fpa

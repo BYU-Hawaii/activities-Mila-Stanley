@@ -1,26 +1,110 @@
-* {
-    margin: 0;
-    padding: 0;
-  }
+h1 {
+    color:white;
+    text-align:center;
+}
 
-  html,
-  body {
-    height: 100%;
-  }
+header h3{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
 
-  body {
-    align-items: center;
-    background-color: #f7f7f7;
-    display: flex;
-    justify-content: center;
-  }
+header {
+    background-image: url('images/server.png');
+    text-align: center;
+    color:white;
+    padding:2rem;
+    grid-area: header;
+    font-size: larger;
+    
+}
 
-  @keyframes octocat-wave {
-    0%, 100% { transform: rotate(0) }
-    20%, 60% { transform: rotate(-25deg) }
-    40%, 80% { transform: rotate(10deg) }
-  }
+nav {
+    list-style:none;
+    grid-area:nav;
+    margin-bottom: 3rem;
+}
+nav ul{
+    margin:0;
+    padding:0
+}
+nav li {
+    display:block;
+    padding:0.5rem;
+    background-color: purple;
+    color:white;
+    border-color: rgb(100, 3, 100);
+    border-style: solid;
+}
 
-  .github-corner:hover .octo-arm {
-    animation: octocat-wave 560ms ease-in-out;
-  }
+nav li a {
+    text-decoration:none;
+    color:white
+}
+
+nav li:hover{
+    background-color:plum;
+}
+
+body {
+    background-color: black;
+    grid-area: body;
+    font-family:'Courier New', Courier, monospace;
+
+}
+
+section {
+    grid-area:section;
+}
+
+footer {
+    color:white;
+
+}
+
+.img-container {
+
+}
+
+#backdrop-p {
+    background-color:rgba(128, 0, 128, 0.617);
+    border-style:solid;
+    border-color:white;
+    color:white;
+    padding:1rem;
+    margin:2rem;
+}
+
+#backdrop-r{
+    background-color:rgba(255, 0, 0, 0.624);
+    border-style:solid;
+    border-color:white;
+    color:white;
+    padding:1rem;
+    margin:2rem;
+}
+
+canvas {
+    border-color:white;
+    border-style: solid;
+    padding:1rem;
+    grid-area:canvas; 
+    margin-left: 25%;
+}
+
+@media (min-width:1024px){
+    nav ul{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        margin:auto;
+        background-color: rgb(100, 3, 100);
+        padding:0.25rem;
+    }
+    nav li {
+        display:block;
+        width: 18%;
+        border:none;
+    }
+}
