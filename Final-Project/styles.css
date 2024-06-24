@@ -10,15 +10,15 @@ header h3{
 }
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),url('images/server.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.105), rgba(0, 0, 0, 0.489)),url('images/server.png');
     text-align: center;
     color:white;
     padding:2rem;
     grid-area: header;
     font-size: larger;
     margin:0;
-    margin-top
-    
+    border-color:purple;
+    border-style:solid;
 }
 
 nav {
@@ -33,9 +33,9 @@ nav ul{
 nav li {
     display:block;
     padding:0.5rem;
-    background-color: purple;
+    background-color: rgba(162, 9, 162, 0.926);
     color:white;
-    border-color: rgb(100, 3, 100);
+    border-color: rgb(125, 3, 125);
     border-style: solid;
 }
 
@@ -78,9 +78,7 @@ img {
 }
 
 #backdrop-p {
-    background-color:rgba(128, 0, 128, 0.926);
-    border-style:solid;
-    border-color:white;
+    background-color:rgba(162, 9, 162, 0.926);
     color:white;
     padding:1rem;
     margin:2rem;
@@ -89,8 +87,6 @@ img {
 
 #backdrop-r{
     background-color:rgba(255, 0, 0, 0.815);
-    border-style:solid;
-    border-color:white;
     color:white;
     padding:1rem;
     margin:2rem;
@@ -99,14 +95,20 @@ img {
 
 .center {
     text-align:center;
+    color:white;
 }
 
 canvas {
+    display:flex;
     border-color:white;
     border-style: solid;
     padding:1rem;
     grid-area:canvas; 
-    margin-left: 25%;
+    width: auto;
+}
+
+figcaption {
+    color:white;
 }
 
 @media (min-width:1024px){
