@@ -28,6 +28,18 @@ header {
     border-bottom:0;
 }
 
+ul{
+    padding:1rem;
+    margin-bottom: 2rem;
+    color:white;
+}
+
+ul li a{
+    color:white;
+    list-style-type: none;
+    font-size: smaller;
+}
+
 nav {
     list-style:none;
     grid-area:nav;
@@ -52,7 +64,7 @@ nav li a {
 }
 
 nav li:hover{
-    background-color:plum;
+    background-color:rgb(239, 188, 239);
 }
 
 body {
@@ -67,7 +79,7 @@ section {
 }
 
 footer {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.246), rgba(0, 0, 0, 0.64)),url('images/server.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.456), rgba(0, 0, 0, 0.64)),url('images/server.png');
     color:white;
     padding:1rem;
     grid-area: footer;
@@ -95,7 +107,7 @@ footer {
 }
 
 #backdrop-p {
-    background-color:rgba(162, 9, 162, 0.926);
+    background-color:rgba(223, 55, 223, 0.926);
     color:white;
     padding:1rem;
     margin:2rem;
@@ -118,6 +130,13 @@ footer {
 figcaption {
     color:white;
     text-align:center;
+}
+
+canvas {
+    padding:1rem;
+    border-color:white;
+    border-style:solid;
+
 }
 @media (min-width:764px){
     nav ul{
