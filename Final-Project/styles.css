@@ -26,6 +26,9 @@ header {
     border-style:solid;
     border-width: 0.75rem;
     border-bottom:0;
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
 }
 
 ul{
@@ -68,8 +71,14 @@ nav li:hover{
 }
 
 body {
+    max-width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "section"
+    "footer";*/
     background-image: url(images/server.png);
-    grid-area: body;
     font-family:'Courier New', Courier, monospace;
 
 }
@@ -84,7 +93,6 @@ footer {
     padding:1rem;
     grid-area: footer;
     font-size: larger;
-
 }
 
 .img-container {
@@ -133,10 +141,7 @@ figcaption {
 }
 
 canvas {
-    padding:1rem;
-    border-color:white;
-    border-style:solid;
-
+    margin:auto;
 }
 @media (min-width:764px){
     nav ul{
@@ -160,7 +165,7 @@ canvas {
         text-align:center;
         flex-wrap:wrap;
     }
-    
+
 }
 
 @media (min-width:1024px){
