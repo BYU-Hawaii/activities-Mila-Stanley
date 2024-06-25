@@ -71,10 +71,16 @@ footer {
     text-align:center;
 }
 
-img {
+.img1 {
     width:20%;
     height:auto;
     padding:2rem
+}
+
+.img2{
+    width:50%;
+    height:auto;
+    padding: 2rem;
 }
 
 #backdrop-p {
@@ -126,4 +132,5 @@ figcaption {
         width: 18%;
         border:none;
     }
+    
 }
