@@ -71,8 +71,7 @@ nav li:hover{
     color:black;
 }
 
-
-body {
+#gamegrid {
     max-width: 100vw;
     display: grid;
     grid-template-areas: 
@@ -80,6 +79,10 @@ body {
     "nav"
     "section"
     "footer";
+
+}
+body {
+
     background-image: url(../images/server.png);
     font-family:'Courier New', Courier, monospace;
 
@@ -90,11 +93,12 @@ section {
 }
 
 footer {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.456), rgba(0, 0, 0, 0.64)),url('images/server.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.456), rgba(0, 0, 0, 0.739)),url('images/server.png');
     color:white;
     padding:1rem;
     grid-area: footer;
     font-size: larger;
+    font-family:'Times New Roman', Times, serif;
 }
 
 .img-container {
@@ -116,8 +120,13 @@ footer {
     padding: 2rem;
 }
 
+.img3{
+    width:95%;
+    height:auto;
+}
+
 #backdrop-p {
-    background-color:rgb(91, 156, 235);
+    background-color:rgba(91, 156, 235, 0.778);
     color:white;
     padding:1rem;
     margin:2rem;
