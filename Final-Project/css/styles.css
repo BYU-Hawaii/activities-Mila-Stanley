@@ -182,13 +182,14 @@ form {
   #registrationForm {
     display:flex;
     flex-direction: column;
-    width:max-content;
+    width:auto;
     background-color: rgb(170, 255, 0);
     border-style:solid;
     border-width:4rem;
     border-color:rgb(170, 255, 0);
     margin-bottom:3rem
   }
+
 
 @media (min-width:764px){
     nav ul{
