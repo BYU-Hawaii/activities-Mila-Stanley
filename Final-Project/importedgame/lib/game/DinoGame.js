@@ -115,13 +115,12 @@ export default class DinoGame extends GameRunner {
 
     if (state.isRunning) {
       this.drawCacti()
-
-      if (state.level > 3) {
+//changed >3 to >1
+      if (state.isRunning) {
         this.drawBirds()
       }
 
       if (state.dino.hits([state.cacti[0], state.birds[0]])) {
-        playSound('game-over')
         state.gameOver = true
       }
 
@@ -257,7 +256,6 @@ export default class DinoGame extends GameRunner {
       state.level = Math.floor(state.score.value / 100)
 
       if (state.level !== oldLevel) {
-        playSound('level-up')
         this.increaseDifficulty()
         state.score.isBlinking = true
       }
