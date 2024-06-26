@@ -8,6 +8,7 @@ h1 {
     text-align:center;
 }
 
+
 header h3{
     color: white;
     text-align: center;
@@ -15,7 +16,7 @@ header h3{
 }
 
 header {
-    background-image: url('../images/server.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.429)), url('../images/server.png');
     text-align: center;
     color:white;
     padding:3rem;
@@ -79,11 +80,11 @@ nav li:hover{
     "nav"
     "section"
     "footer";
-
 }
+
 body {
 
-    background-image: url(../images/server.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.292), rgba(0, 0, 0, 0.215)),url(../images/server.png);
     font-family:'Courier New', Courier, monospace;
 
 }
@@ -93,7 +94,7 @@ section {
 }
 
 footer {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.456), rgba(0, 0, 0, 0.739)),url('images/server.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.715), rgba(0, 0, 0, 0.759)),url('images/server.png');
     color:white;
     padding:1rem;
     grid-area: footer;
@@ -102,6 +103,8 @@ footer {
 }
 
 .img-container {
+    display:flex;
+    flex-wrap:wrap;
     align-items: baseline;
     justify-content: space-evenly;
     justify-self: center;
@@ -121,14 +124,21 @@ footer {
 }
 
 .img3{
-    width:95%;
+    width:100%;
     height:auto;
+    margin-top:0;
+}
+
+.img4 {
+    width:30%;
+    height:auto;
+    padding:1rem
 }
 
 #backdrop-p {
-    background-color:rgba(91, 156, 235, 0.778);
+    background-color:rgba(91, 156, 235, 0.865);
     color:white;
-    padding:1rem;
+    padding:2rem;
     margin:2rem;
     font-weight: bold;
 }
