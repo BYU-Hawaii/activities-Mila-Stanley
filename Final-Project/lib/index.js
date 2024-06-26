@@ -1,17 +1,19 @@
-import DinoGame from './game/DinoGame.js';
+import DinoGame from './game/DinoGame.js'
 
 let game;
-const width = window.innerWidth;
-const height = window.innerHeight;
+if (window.innerWidth <= 764) {
+  game = new DinoGame(500, 300);
+} else if (window.innerWidth > 764) {
+  game = new DinoGame(800, 400);
+}
+
+const isTouchDevice =
+  'ontouchstart' in window ||
+  navigator.maxTouchPoints > 0 ||
+  navigator.msMaxTouchPoints > 0
 
 var mydiv = document.getElementById("mydiv");
 if (mydiv) {
-// Adjust game size based on screen width
-  if (width <= 764) {
-    game = new DinoGame(width * 0.8, height * 0.6); // 80% of screen width, 60% of screen height for smaller screens
-  } else {
-    game = new DinoGame(width * 0.8, height * 0.5); // 80% of screen width, 50% of screen height for larger screens
-  }
 
   if (isTouchDevice) {
     document.addEventListener('touchstart', ({ touches }) => {
